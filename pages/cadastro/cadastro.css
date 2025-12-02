@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e4d9d9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #0d2137;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.sidebar p {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 75%;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.icone-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-entrar {
+  background-color: #e6e6e6;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-entrar:hover {
+  background-color: #d1d1d1;
+}
+
+.esqueceu {
+  color: #d9d9d9;
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.divisor span {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0.2rem 0.5rem;
+}
+
+.redes-sociais img {
+  width: 35px;
+  height: 35px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.formulario {
+  width: 80%;
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+  position: relative;
+}
+
+.formulario h2 {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-block: 10px;
+}
+
+.genero {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn-cadastrar {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem;
+  width: 40%;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-cadastrar:hover {
+  background-color: #d1d1d1;
+}
+
+/* FOTO DE PERFIL */
+.foto-perfil {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-circulo {
+  width: 120px;
+  height: 120px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}

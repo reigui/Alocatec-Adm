@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background: #0d2137;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background: #163764;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #767bff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #7f7ff5, #b388eb);
+  border-radius: 50%;
+}
+
+.logout {
+  margin-left: auto;
+}
+
+.content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.cards-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef0f4;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid p,
+.col p {
+  background: #f7f9fc;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e4e8ef;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+.install-img img {
+  width: 180px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.accept,
+.reject {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.accept {
+  background: #4cd964;
+  color: white;
+}
+
+.reject {
+  background: #ff5252;
+  color: white;
+}
+
+.accept:hover {
+  background: #3bc257;
+}
+
+.reject:hover {
+  background: #ff6b6b;
+}

@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #0d2137;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.icone-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background: #163764;
+  border-radius: 8px;
+  opacity: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #434ff0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #7f7ff5, #b388eb);
+  border-radius: 50%;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.nome {
+  font-weight: bold;
+}
+
+.cargo {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.logout {
+  margin-left: auto;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.content {
+  background-color: white;
+  width: 900px;
+  height: 900px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  align-items: center;
+  margin: 20px auto 10px auto;
+}
+
+.header-form {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  margin-block: 20px;
+  justify-content: space-between;
+}
+
+.header-form h2 {
+  font-size: 22px;
+  color: #222;
+  font-weight: 600;
+}
+
+.status {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  color: inherit;
+}
+
+.status h2 {
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+  color: inherit;
+}
+
+.status.Ativo {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status.Inativo {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group p {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-apagar {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-apagar:hover {
+  background-color: #c0392b;
+}
+
+.btn-editar {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #1c598a;
+}
+
+.btn-voltar {
+  background-color: #7ea9c9;
+  color: #fff;
+}
+
+.btn-voltar:hover {
+  background-color: #5f8fb4;
+}
